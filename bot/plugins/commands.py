@@ -12,7 +12,8 @@ db = Database()
 @Client.on_message(filters.command(["start"]) & filters.private, group=1)
 async def start(bot, update):
     
-    try:
+    Update Channel = "@SH_Movies"
+try:
         file_uid = update.command[1]
     except IndexError:
         file_uid = False
